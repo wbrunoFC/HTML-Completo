@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Define um conteiner para codigo html que deseja rederizar posteriormente -->
+
+    <template id="tpl-1">
+        <li>{{name}}</li>
+    </template>
+    
+    <ul>
+
+    </ul>
+
+    <button type="button">Add</button>
+
+    <script>
+        const btn = document.querySelector('button');
+        const template = document.querySelector('#tpl-1');
+        const ul = document.querySelector('ul');
+
+        btn.addEventListener('click', function e (){
+            ul.append(template.content.cloneNode(true));
+        });
+    </script>
+</body>
+</html>

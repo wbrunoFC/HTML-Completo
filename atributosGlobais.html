@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"><!--Define os caracteres-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--name define o nome do metadado-->
+    <title>Atributos Globais</title>
+    <!-- Define o estilo da pagina-->
+    <style>
+        .caixa {
+            width: 100px;
+            height: 100px;
+            background-color: chocolate;
+        }
+
+        .drop {
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <strong>Atributo accesskey</strong>
+    <!-- Ao apertar a tecla n + alt o navegador ira deixar o botao com foco-->
+    <button type="button" accesskey="n">Novo</button>
+    <!-- Ao apertar a tecla s + alt o navegador ira deixar o botao com foco-->
+    <button type="button" accesskey="s">Salvar</button>
+    <hr>
+    <strong>Atributo contenteditable</strong>
+    <!--Edita o conteudo de texto-->
+    <p contenteditable="true">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
+        temporibus obcaecati doloremque repellat sapiente ipsum ab
+        quisquam in animi id incidunt, atque saepe laudantium
+        numquam ad! Autem nulla laboriosam natus.</p>
+    <hr>
+    <strong>Atributo data-</strong>
+    <!-- Guarda informacoes que nao vao ser visiveis para o usuario-->
+    <ol>
+        <li data-id="12" data-login="Bcosta">Bruno Costa</li>
+    </ol>
+    <hr>
+    <strong>Atributo Dir</strong>
+    <!--Direcao de leitura da pagina-->
+    <p dir="ltr">esquerda -> direita</p>
+    <p dir="rtl">direita -> esquerda</p>
+    <hr>
+    <strong>Atributo Draggable</strong>
+    <!-- Elemento que pode ser arrastavel-->
+    <button type="button" draggable="true">botao</button>
+    <hr>
+    <strong>Atributo Dropzone</strong>
+    <!-- Pega um campo e solta no local correto-->
+    <div class="caixa" draggable="true"></div>
+    <div class="drop" dropzone="copy"></div>
+    <hr>
+    <strong>Atributo hidden</strong>
+    <!-- Esconde elementos-->
+    <div>Bruno</div>
+    <div hidden>Costa</div>
+    <hr>
+    <strong>Atributo Lang</strong>
+    <!-- Define a linguagem-->
+    <p lang="en">Hello World!</p>
+    <hr>
+    <strong>Atributo Spellcheck</strong>
+    <!-- Verifica ortografia quando o usuario digital alguam coisa-->
+    <p contenteditable="true" spellcheck="false">Aqui estou nao estou usando o spellcheck</p>
+    <p spellcheck="true" contenteditable="true">Aqui estou usando o spellcheck</p>
+    <hr>
+    <strong>Atributo Tabindex</strong>
+    <!-- Ordem de tabulacao quando apressionado a tecla TAB-->
+    <input type="text" placeholder="Digite seu E-mail" tabindex="1" required>
+    <input type="password" placeholder="Digite sua senha" tabindex="2" disabled>
+    <button type="reset" tabindex="4">Limpar</button>
+    <button type="submit" tabindex="3">Enviar</button>
+    <hr>
+    <strong>Atributo title</strong>
+    <!-- Descreve de forma detalhada o que a tag faz-->
+    <a href="#" title="Direciona para o wpp">Clique aqui</a>
+    <hr>
+    <strong>Atrubuto translate</strong>
+    <!-- Pode traduir obrigatoreamente ou nao-->
+    <p translate="yes">Welcome</p>
+    <p translate="no">Welcome</p>
+
+</body>
+
+</html>

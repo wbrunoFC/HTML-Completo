@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--Define um formulario
+    
+    accept-chartset - Define o encode usado ao enviar o formulario
+    action - Define para qual URL o formulario sera enviado
+    autocomplete - Define os campos terao a funcao auto completar habilitados
+    enctype - Define qual codificacao de formulario sera usada
+    
+    method - Define qual sera o metodo de envio do formulario
+    name - Define qual o nome do formulario
+    novalidate - Define se deve ser validado ao enviar
+    target - Define qual o alvo ao enviar o formulario
+    -->
+    <form action="/send" method="POST" target="_blank" enctype="multipart/form-data" autocomplete="on">
+        <input type="text" nome="username">
+        <input type="password" name="password">
+        <input type="submit" name="submit">
+    </form>
+</body>
+
+</html>

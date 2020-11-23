@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--Evento inicia quando a legenda aparece no video -->
+    <video src="https://storage.googleapis.com/hcode-public-storage/videos/AV1_trailer.mp4"  ondurationchange="debug(event)" controls></video>
+
+    <script>
+        debug = e => console.log('Evento: ' + e.type)
+    </script>
+</body>
+
+</html>

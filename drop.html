@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #drag{
+            width: 30vw;
+            height: 30vw;
+            background-color: blue;
+        }
+        #target{
+            width: 30vw;
+            height: 30vw;
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+
+<body>
+    <!--O evento se inicia quando o elemento eh solto-->
+    <fieldset>
+        <legend>Teste de input</legend>
+        <button type="submit" id="drag" 
+         draggable="true" ondragstart="debug(event)">Botao</button>
+    </fieldset>
+    <div id="target" ondragleave="debug(event)" ondragenter="debug(event)" ondragover="cancel(event)" ondrop="debug(event)"></div>
+
+    <script>
+        function cancel(e){
+            e.preventDefault();// Cancelando o padrao da pagina
+        }
+        debug = e => {
+            console.log('Evento: ' + e.type)
+        }
+    </script>
+</body>
+
+</html>

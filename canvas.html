@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:black;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Define um quadro de desenhos graficos 2d ou 3d(necessario JS)
+    height -  Define a altura do seu quadro
+    width - Define a largura do seu quadro-->
+
+    <canvas id="quadro"></canvas>
+
+    <script>
+        const quadro = document.querySelector('#quadro');
+        const contexto = quadro.getContext('2d');
+
+        contexto.fillStyle('#FF0000');
+        contexto.fillReact(0, 0, 100, 100);
+    </script>
+</body>
+
+</html>

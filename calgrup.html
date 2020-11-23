@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/table.css">
+</head>
+<body>
+    <!--Define propriedades em todas as celulas que forman uma coluna! Deve ser usada
+    dentro de uma tag table
+    Span - Define o numero de colunas que esse grupo deve abranger-->
+
+        <table>
+            <colgroup span="2" style="background: blue;"></colgroup>
+
+            <thead>
+                <tr>
+                    <th>A</th>
+                    <th>B</th>
+                    <th>C</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>A1</td>
+                    <td>B1</td>
+                    <td>C1</td>
+                </tr>
+                <tr>
+                    <td>A2</td>
+                    <td>B2</td>
+                    <td>C2</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3" align="center">
+                        Footer
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+
+</body>
+</html>

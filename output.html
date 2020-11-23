@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--Mostra um resultado de um calculo
+    
+    for - define a relacao entre o resultado e os elementos usados para calculo
+    form - Define qual o formulario que esse campo pertence
+    name  - Define o nome do elemento-->
+
+    <form action="formulario" oninput="c.value = parseInt(a.value) + parseInt(b.value)">
+        <input type="range" id="a" value="0" min="0" max="10"> +
+        <input type="number" name="number" id="b" value="0"> =
+        <output name="c" for="a b">0</output>
+    </form>
+
+</body>
+
+</html>
