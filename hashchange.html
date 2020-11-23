@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <!--O evento se inicia ao digitar dados dentro do input-->
-    <input type="text" oninput="debug(event)">
-
+<body onhashchange="debug(event)">
+    <!--Para testar o evento altera a url apos a ultima / para #test-->
+    
     <script>
-        debug = e => console.log('Evento: ' + e.type)
+        function debug(e){
+            alert('Evento: ' + e.type)
+        }
     </script>
+
 </body>
 </html>

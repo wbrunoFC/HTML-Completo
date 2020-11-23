@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <!--O evento se inicia ao digitar dados dentro do input-->
-    <input type="text" oninput="debug(event)">
+
+<body onunload="return debug(event)">
+    <!---->
 
     <script>
-        debug = e => console.log('Evento: ' + e.type)
+        debug = e => console.log('Event: ' + e.type)
     </script>
 </body>
+
 </html>

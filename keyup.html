@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <!--Ao selecionar um texto dentro do campo o evento eh iniciado-->
+    <!--keydown - afundar a tecla // kaypress - pressiondada a tecla
+    keyup - soltar a tecla-->
     <fieldset>
         <legend>Teste de input</legend>
         <form>
-            <input type="search" onselect="debug(event)">
+            <input type="text" onkeydown="debug(event)" onkeypress="debug(event)" onkeyup="debug(event)">
         </form>
     </fieldset>
 
     <script>
-        debug = e => console.log('Evento: ' + e.type)
+        debug = e => {
+            console.log('Evento: ' + e.type)
+        }
     </script>
 </body>
+
 </html>

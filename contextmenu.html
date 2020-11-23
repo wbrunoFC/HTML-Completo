@@ -6,13 +6,8 @@
     <title>Document</title>
 </head>
 <body>
-    <!--Ao selecionar um texto dentro do campo o evento eh iniciado-->
-    <fieldset>
-        <legend>Teste de input</legend>
-        <form>
-            <input type="search" onselect="debug(event)">
-        </form>
-    </fieldset>
+    <!--Ao clicar com o botao direito dentro do menu(menun de contexto) o evento eh iniciado-->
+    <input type="text" oncontextmenu="debug(event)">
 
     <script>
         debug = e => console.log('Evento: ' + e.type)

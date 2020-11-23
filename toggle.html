@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--Acontece quando aciona os detalhes-->
+    <details ontoggle="debug(event)">
+        <summary>Hcode</summary>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt magni reprehenderit voluptates earum aut quod possimus laboriosam iusto, illum dolorem tempora. Porro quibusdam qui minima architecto, molestiae veniam nihil necessitatibus.</p>
+    </details>
+
+    <script>
+        debug = e => console.log('Evento: ' + e.type)
+    </script>
+</body>
+
+</html>

@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Event: afterprint e beforeprint</title>
 </head>
-<body>
-    <img src="adasda/da/d/a/sdad" alt="Image" onerror="debug(event)">
-
+<body onbeforeprint="debug(event)" onafterprint="debug(event)">
+    <!--Para verificar o evento tente imprimir a pagina-->
     <script>
         debug = e => alert('Evento: ' + e.type)
     </script>

@@ -1,0 +1,91 @@
+== O QUE SAO EVENTOS ==
+- Sao gatilhos disparados devido alguma interacao
+- Eventos de: Janela, Formulario, teclado, mouse, arrasto, tranferencia, midia e outros.
+- Nos atributos HTML todo evento deve ter o prefixo "ON"
+
+==> EVENTOS DE JANELA
+afterprint - Disparado depois da pagina ser impressa
+beforeprint - Disparado antes da pagina ser impressa
+beforeeunload - Disparado antes do navegador carregar outra pagina
+error - Disparado quando ocorrer um error
+hashchange - Disparado quando o hash da url da pagina eh alterado
+load - Disparado quando toda a pagina for carregada
+message - Disparado quando ocorrer uma mensagem
+offline - Disparado quando o navegador eh desconectado da internet
+online - Disparado quando o navegador eh conectado com a internet
+pagehide - Disparado quando a pagina eh ocultada
+pageshow - Disparado quando a pagina eh mostrada
+popstate - Disparado quando a ocorrencia no historico do navegador eh alterada
+resize - Disparado quando a janela eh redimensionada
+storage - Disparado quando o armaenamento do navegador eh alterado
+unload - Disparado quando o usuario atualia a pagina ou fecha a janela
+
+==> EVENTOS DE FORMULARIO
+blur - Disparado quando o foco do elemento eh removido
+change - Disparado quando termina de alterar o valor do elemento
+contextmenu - Disparado quando o usuario abre o menu de contexto
+focus - Disparado quando o elemento eh focado
+input - Dispardo quando o elemento recebe uma entrada de valor
+invalid - Dispardo quando o valor do elemento eh redefinido ao estado inicial
+search - Dispardo quando o elemento input do tipo search eh enviado
+select - Disparado quando o valor do elemento eh selecionado
+submit - Dispardo quando o formulario eh enviado
+
+==> EVENTOS DE TECLADO
+keydown - Disparado quadno a tecla vai para baixo
+keypress - Disparado quando a tecla eh pressionada
+Keyup  - Disparado quando a tecla eh solta
+
+==> EVENTOS DE MOUSE 
+click - Disparado quando o elemento recebe um clique
+dblclick -  Disparado quando o elemento recebe um clique duplo
+mousedown - Disparado quando o elemento do clique vai para baixo
+mousemove - Disparado quando o cursor do mouse se move sobre o elemento
+mouseout - Disparado quando o cursor do mouse nao esta em cima do elemento
+mouseover - Disparado quando o cursor do mouse esta em cima do elemento
+mouseup - Disparado quando o botao do clique eh solto
+wheel - Disparado quando a roda do mouse eh rodada
+mouseenter - Disparado quando o cursor do mouse entra em cima do elemento.
+mouseleave - Disaprado quando o cursor do mouse sai de cima do elemento
+
+==> EVENTO DE ARRASTO
+drag - Dispardo quando o elemento eh arrastado
+dragend - Disparado quando o elemento para de ser arrastado
+dragenter - Disparado quando o elemento arrastado entra em um elemento que permite soltar
+dragleave - Disparado quando o elemento arrastado sai de cima de um elemento que permite soltar
+dragover - Disparado quando o elemento arrastado passa em um elemento que permite soltar
+dragstart - Disparado quando o elemento comeca a ser arrastado
+drop - Disparado quando o elemento eh solto
+scroll - Disparado quando o scroll eh rolado
+
+==> EVENTO DE TRANSFERENCIA
+copy - Disparado quando o conteudo do elemento eh copiado
+cut - Disparado quando o conteudo do elemento eh recortado
+paste - Disparado quando o conteudo do elemento eh colado
+
+==> EVENTO DE MIDIA
+abort - Disparado quando o carregamento da midia eh cancelado
+canplay - Disparado quando a midia carregou o suficiente para comecar
+canplaythrough - Disparado quando a midia carregou e pode ser reproduzido ate o final
+cuachange - Disparado quando o texto de uma trilha eh alterado
+durationchange - Disparado quando o tamanho total da midia eh alterado
+emptied - Disparado quando acontece algum problema e a midia fica indisponivel
+ended - Disparado quando a midia foi consumida ate o fim
+error - Disparado quando um erro acontece
+loadedmetadata - Disparado quando os dados da midia sao carregados
+loadstart - Disparado quando os dados da midia comecam a ser carregados
+pause - disparado quando a midia eh pausada
+play - Disaprado quando a midia eh comecada
+playing - Disaprado quando depois que a midia realmente comecou
+progress - Disparado enquanto o navegador obtem os dados da midia
+ratechange - Disaprado quando a taxa de reproducao eh alterada
+seeked  - Disparado quando a ataxa de reproducao eh alterada
+seeking - Disparado quando a busca de dados da midia terminou
+stalled - Disparado quando o navegador nao pode buscar os dados de midia por qualquer motivo
+suspend - Disparado quando a busca de dados da midai eh parado antes de ser completamente carregado
+timeupdate - Disparado quando a posicao da reproducao eh alterada
+volumechange - Disparado quando o volume do audio da midia eh alterado
+waiting - Disparado quando a midia eh pausada para armaanr mais dados em buffer
+
+==> EVENTO SEM CATEGORIA
+toggle - Disparado quando o usuario abre ou fecha o elemento details

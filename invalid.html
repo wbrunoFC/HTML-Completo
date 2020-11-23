@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <!--Ao selecionar um texto dentro do campo o evento eh iniciado-->
+    <!--O evento se inicia quando acionado o botao com o input vazia-->
     <fieldset>
         <legend>Teste de input</legend>
         <form>
-            <input type="search" onselect="debug(event)">
+            <input type="email" oninvalid="debug(event)" required>
+            <button type="submit">Enviar</button>
         </form>
     </fieldset>
 
@@ -18,4 +21,5 @@
         debug = e => console.log('Evento: ' + e.type)
     </script>
 </body>
+
 </html>

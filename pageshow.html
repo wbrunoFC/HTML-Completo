@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <!--O evento se inicia ao digitar dados dentro do input-->
-    <input type="text" oninput="debug(event)">
+<body onpageshow="debug(event)">
+    <!---->
 
     <script>
-        debug = e => console.log('Evento: ' + e.type)
+        debug = e => alert('Evento: ' + e.type)
     </script>
 </body>
 </html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--Evento se inicia quando muda a taxa de reproducao -->
+    <select onchange="setRate(event)">
+        <option>0.25</option>
+        <option>0.5</option>
+        <option>0.75</option>
+        <option selected>1</option>
+        <option>1.25</option>
+    </select>
+
+    <video src="https://storage.googleapis.com/hcode-public-storage/videos/AV1_trailer.mp4"  onloadeddata="debug(event)" onloadedmetadata="debug(event)" onloadstart="debug(event)" onplay="debug(event)" onratechange="debug(event)" controls></video>
+
+    <script>
+        debug = e => console.log('Evento: ' + e.type)
+        setRate = e => {
+            const video = document.querySelector('video')
+            const value = e.target.value
+
+            video.playbackRate = parseFloat(value)
+        }
+    </script>
+</body>
+
+</html>

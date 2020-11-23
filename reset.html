@@ -6,11 +6,12 @@
     <title>Document</title>
 </head>
 <body>
-    <!--Ao selecionar um texto dentro do campo o evento eh iniciado-->
+    <!--O evento se inicia quando acionado o botao limpar-->
     <fieldset>
         <legend>Teste de input</legend>
         <form>
-            <input type="search" onselect="debug(event)">
+            <input type="text" onreset="debug(event)">
+            <button type="reset">limpar</button>
         </form>
     </fieldset>
 

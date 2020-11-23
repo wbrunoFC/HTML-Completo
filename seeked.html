@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--Evento se inicia quando muda a taxa de reproducao -->
+
+    <video src="https://storage.googleapis.com/hcode-public-storage/videos/AV1_trailer.mp4"  onloadeddata="debug(event)" onloadedmetadata="debug(event)" onloadstart="debug(event)" onplay="debug(event)" onseeked="debug(event)" controls></video>
+
+    <script>
+        debug = e => console.log('Evento: ' + e.type)
+    </script>
+</body>
+
+</html>
